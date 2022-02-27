@@ -1,0 +1,31 @@
+{% extends "card/base.html" %}
+
+
+{% block content %}
+<div class="center">
+  <a id="create_set" href="{% url 'create_set' %}">Create New Set</a>
+</div>
+<div style="margin-left: 2rem;font-size: 1.5rem;">Your Sets:</div>
+<div class="all_set">
+  <div class="set_box">
+    <div class="set_subject center">Subject 1</div>
+    <div class="center">
+      <a href="{% url 'view_set' %}" class="set_details">View set</a>
+    </div>
+  </div>
+
+  <div class="set_box">
+    <div class="set_subject center">Subject 1</div>
+    <div class="center">
+      <a href="{% url 'view_set' %}" class="set_details">View set</a>
+    </div>
+  </div>
+
+  <div class="set_box">
+    <div class="set_subject center">Subject 1</div>
+    <div class="center">
+      <a href="{% url 'view_set' %}" class="set_details">View set</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
